@@ -1,12 +1,18 @@
 require('dotenv').config()
 
-const admin = require("firebase-admin");
+const admin = require('./firebase-admin');
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
 
-const serviceAccount = require(process.env.FIREBASE_SERVICE_ACCOUNT_KEY_PATH);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.FIREBASE_DATABASE_URL
-});
+const port = process.env.APP_PORT || 8080;
+const host = process.env.APP_HOST || '127.0.0.1';
 
-console.log('Firebase Admin Initialized');
+const router = require('./routes');
+app.use('/', router);
+app.listen(port, host);
+
+console.log(`Server listening at ${host}:${port}`);
