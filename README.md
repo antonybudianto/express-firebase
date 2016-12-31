@@ -15,9 +15,9 @@ to integrate with 3rd party services, or maybe custom token, or you need server-
 
 3. You need to download your Firebase Service Account json file, please follow the official [instruction](https://firebase.google.com/docs/admin/setup).
 
-Put the file at project root.
+    Put the file at project root.
 
-> :warning: Always make sure the JSON file is git-ignored!
+    > :warning: Always make sure the JSON file is git-ignored!
 
 4. Copy `.env.example` file and rename it to `.env` at project root.
 
