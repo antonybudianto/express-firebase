@@ -1,0 +1,29 @@
+{
+  "name": "express-firebase",
+  "version": "1.0.0",
+  "description": "Express with Firebase powered backend server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonybudianto/express-firebase.git"
+  },
+  "keywords": [
+    "express",
+    "firebase",
+    "backend"
+  ],
+  "author": "Antony Budianto <antonybudianto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonybudianto/express-firebase/issues"
+  },
+  "homepage": "https://github.com/antonybudianto/express-firebase#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "firebase-admin": "^4.0.4"
+  }
+}
