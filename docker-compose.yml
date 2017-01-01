@@ -1,0 +1,12 @@
+version: '2'
+services:
+    node:
+        build: .
+        env_file: .env
+        volumes:
+        - .:/code
+        ports:
+        - "8081:8081"
+
+# Reference
+# https://docs.docker.com/compose/gettingstarted/
