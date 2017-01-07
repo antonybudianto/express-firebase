@@ -1,13 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-const firebaseAuthMiddleware = require('./middlewares/firebase-auth.middleware');
+const firebaseMiddleware = require('express-firebase-middleware');
 
 router.use((req, res, next) => {
     next();
 });
 
-router.use('/api', firebaseAuthMiddleware);
+router.use('/api', firebaseMiddleware.auth);
 
 router.get('/', (req, res) => {
     res.json({
