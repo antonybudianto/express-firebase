@@ -5,6 +5,8 @@ Simple Firebase Admin Server using NodeJS.
 You used Firebase for auth, realtime DB, and all. Finally you need your own server
 to integrate with 3rd party services, or maybe custom token, or you need server-side operations.
 
+> Have existing express server? Try out [Express Firebase Middleware](https://github.com/antonybudianto/express-firebase-middleware)
+
 ## How to use
 1. Clone this repo and change directory to the cloned folder
 2. Install the packages
