@@ -1,3 +1,4 @@
 .env
+.vscode
 node_modules
 service-account-key.json
