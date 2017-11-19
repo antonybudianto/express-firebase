@@ -30,6 +30,7 @@ to integrate with 3rd party services, or maybe custom token, or you need server-
     npm start
     ```
 6. It should log successfully, and you can start using Firebase Admin SDK
+7. For further reading, please visit [Express Firebase Middleware repo](https://github.com/antonybudianto/express-firebase-middleware)
 
 ## License
 MIT
