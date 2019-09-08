@@ -23,10 +23,10 @@
   },
   "homepage": "https://github.com/antonybudianto/express-firebase#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "dotenv": "^4.0.0",
-    "express": "^4.16.2",
-    "firebase-admin": "^5.5.0",
-    "express-firebase-middleware": "^2.0.0"
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.5.0",
+    "express-firebase-middleware": "^3.0.0"
   }
 }
